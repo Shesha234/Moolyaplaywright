@@ -4,27 +4,18 @@ import { test, chromium, firefox, webkit} from '@playwright/test';
 test('has title', async ({ page }) => {
     const url='https://playwright.dev/'
 
-    async function browsers_Contexts(browserName){
-    let browsers;
-    if(browserName=='chromium'){
-        browsers =await chromium.launch()}
-    else if(browserName=='firefox'){
-        browsers =await firefox.launch()}
-    else if(browserName=='webkit'){
-        browsers =await webkit.launch()}
-    else {
-        throw new Error(`Unknown browser: ${browserName}`);
-        }
-    const pages = await browsers.newPage();
-    await pages.goto(url);
-    await pages.screenshot({ path: `screenshot-${browserName}.png` });
-    await pages.close();
-    console.log(`${browserName} screenshot saved.`);
-    }
-
-    browsers_Contexts('chromium')
-    browsers_Contexts('firefox')
-    browsers_Contexts('webkit')
+    async function browsers_Contexts(btype, bname) {
+        const browser = await btype.launch();
+        const page = await browser.newPage();
+        await page.goto(url);
+        await page.screenshot({ path: `screenshot-${bname}.png` });
+        await browser.close();
+        console.log(`${bname} screenshot saved.`);
+      }
+      
+        await browsers_Contexts(chromium, 'chromium');
+        await browsers_Contexts(firefox, 'firefox');
+        await browsers_Contexts(webkit, 'webkit');
   
 });
 
