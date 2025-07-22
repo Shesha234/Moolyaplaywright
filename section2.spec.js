@@ -12,6 +12,12 @@ test('has title', async ({ page }) => {
     const text = await page.locator('//h2[@aria-label="Apple iPhone 15 (128 GB) - Pink"]/span').textContent()
     console.log(text)
     await expect(text).toContain('Apple iPhone 15 (128 GB) - Pink');
+
+    await page.locator('//h2[@aria-label="Apple iPhone 15 (128 GB) - Pink"]/span').waitFor({state:'visible',timeout:10000})
+    await page.waitForSelector('div[cel_widget_id="MAIN-SEARCH_RESULTS-10"] div[data-cy="title-recipe"] span')
+    await page.getByText('Apple iPhone 15 (256 GB) - Blue').waitFor({state:'visible',timeout:10000})
+    await page.getByPlaceholder('Search Amazon.in').waitFor({state:'visible',timeout:10000})
+    await page.getByLabel('Apple iPhone 15 (128 GB) - Black').waitFor({state:'visible',timeout:10000})
   
 });
 
