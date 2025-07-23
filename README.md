@@ -15,3 +15,10 @@ locator(), getByText(), getByRole()
 Working with CSS and XPath selectors
 Practical Task: Write a test to :  1.Search for Product | 2. pick the xpath of that product |3. extract product title from a demo e-commerce site.
 Assessment: Share code that successfully locates and logs 5+ elements using various selectors.
+
+**Section 3: Actions and Interactions**
+Topics:
+Clicking, Typing, Hovering
+Keyboard and Mouse interactions
+Practical Task: Automate a login form using dummy credentials.
+Assessment: Submit a working login test (UI can be a public test site like https://the-internet.herokuapp.com/login).
