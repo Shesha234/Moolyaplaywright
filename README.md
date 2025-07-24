@@ -22,3 +22,10 @@ Clicking, Typing, Hovering
 Keyboard and Mouse interactions
 Practical Task: Automate a login form using dummy credentials.
 Assessment: Submit a working login test (UI can be a public test site like https://the-internet.herokuapp.com/login).
+
+**Section 4: Assertions & Test Structure**
+Topics:
+Using expect for assertions
+Structuring tests using test.describe, test.beforeEach
+Practical Task: Write a test suite with at least 3 test cases using assertions.
+Assessment: Peer-reviewed test suite using Playwright Test Runner.
