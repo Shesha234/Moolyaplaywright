@@ -29,3 +29,10 @@ Using expect for assertions
 Structuring tests using test.describe, test.beforeEach
 Practical Task: Write a test suite with at least 3 test cases using assertions.
 Assessment: Peer-reviewed test suite using Playwright Test Runner.
+	
+**Section 5: Handling Waits and Timeouts**
+Topics:
+Auto-waiting in Playwright
+Explicit waits, timeouts, waitForSelector
+Practical Task: Create a test that waits for a lazy-loaded element (like infinite scroll or modal).
+Assessment: Record a short screen capture of the test running successfully.
