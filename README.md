@@ -36,3 +36,11 @@ Auto-waiting in Playwright
 Explicit waits, timeouts, waitForSelector
 Practical Task: Create a test that waits for a lazy-loaded element (like infinite scroll or modal).
 Assessment: Record a short screen capture of the test running successfully.
+ 
+**Section 6: Data-driven Testing**
+Topics:
+Using test.each for parameterized tests
+Reading data from JSON
+Practical Task: Automate form submission with multiple input values.
+Assessment: Submit code that reads from JSON and executes tests dynamically.
+ 
