@@ -43,4 +43,18 @@ Using test.each for parameterized tests
 Reading data from JSON
 Practical Task: Automate form submission with multiple input values.
 Assessment: Submit code that reads from JSON and executes tests dynamically.
- 
+
+**Section 7: Screenshots and Videos**
+Topics:
+page.screenshot(), full page screenshots
+Enabling video recording
+Practical Task: Capture screenshots and record video of a test
+Assessment: Share a zip with test logs, screenshots, and a short video.
+
+**Section 8: API Testing with Playwright**
+Topics:
+Making API calls using request.newContext()
+Validating API response and chaining with UI tests
+Practical Task: Hit a public API (like JSONPlaceholder) and verify the response.
+Assessment: Submit test code and result logs (console output or 
+
